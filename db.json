@@ -1,0 +1,24 @@
+{
+    "productos":[
+        {
+            "id": 1,
+            "nombre": "nintendo switch",
+            "precio": "1,380,000",
+            "imagen": "https://http2.mlstatic.com/D_NQ_NP_989383-MLU70320451445_072023-O.webp"
+        },
+
+        {
+            "id": 2,
+            "nombre": "PS5",
+            "precio": "2,384,995",
+            "imagen": "https://gmedia.playstation.com/is/image/SIEPDC/ps5-product-thumbnail-01-en-14sep21?$facebook$"
+        },
+
+        {
+            "id": 3,
+            "nombre": "PS4",
+            "precio": "1,780,000",
+            "imagen": "https://gmedia.playstation.com/is/image/SIEPDC/ps4-product-thumbnail-01-en-14sep21?$facebook$"
+        }
+    ]
+}

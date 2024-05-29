@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="icon" href="imagenes/icono tienda.png" type="image/png" sizes="180x180">
+    <link rel="apple-touch-icon" href="imagenes/icono tienda.png" sizes="180x180">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">    <title>AluraGeek</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!------------ ENCABEZADO ----------->
+
+    <header class="header container">
+        <nav class="header_info">
+            <a href="./index.html"><img class="header__logo" src="imagenes/icono tienda.png"></a>
+            <h1 class="header__title">AluraGeek</h1>
+            <div class="buscar">
+                <input type="text" placeholder="Buscar" required>
+                <div class="btn">
+                    <i class="fas fa-search"></i>
+                </div>
+        </nav>
+    </header>
+
+        <!------------ PRODUCTOS ----------->
+
+    <div class="pagina_principal">
+        <section class="seccion__productos">
+            <div class="subtitulo">
+                <h1> Mis productos</h1>
+            </div>
+            <div class="lista-card" data-cards-productos>
+                <div class="card">
+                    <figure>
+                    <img class="producto-img"  src="" alt="img"/>
+                    <figcaption class="card-container--info"></figcaption>
+                    </figure>
+                 <div class="card-container--value">
+                    <p>COP/ </p>
+                    <button class="delete-button" data-id="${id}">
+                    <img class="delete_logo"  src="imagenes/eliminar.png" alt="eliminar"/>
+                    </button>
+                 </div>
+               </div>
+            </div>
+        </section>
+    
+
+        <section class="formulario-container">
+            <form class="formulario-producto" data-formulario>
+                <h2 class="subtitulo-formulario">Agregar Producto</h2>
+                <div class="datos-formulario">
+                    <input class="input_nombre" type="text" name="nombre" placeholder="Nombre" data-nombre-producto required>
+                    <p class="parrafo-nombre"></p>
+                
+                    <input class="input_precio" type="number" name="precio" placeholder="Precio" data-precio-producto required>
+                    <p class="parrafo-precio"></p>
+               
+                    <input class="input_imagen" type="url" name="url-imagen" placeholder="Imagen" data-imagen-producto required>
+                    <p class="parrafo-url"></p>
+                </div>
+                <div class="botones">
+                    <button class="boton-enviar" type="submit"data-enviar>Añadir</button>
+                    <button class="boton-limpiar" type="button" data-limpiar>Limpiar</button>
+                </div>
+            </form>
+        </section>
+    </div>
+</body>
+</html>

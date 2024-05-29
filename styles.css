@@ -1,0 +1,199 @@
+/*...........Encabezado.............*/
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Raleway', sans-serif;
+}
+
+.header{
+    margin: 1rem auto;
+}
+
+.header__logo{
+    margin-left: 3rem;
+    width: 80px;
+    height: 80px;
+}
+
+.header{
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #b0c4de; /* Color de fondo */
+    box-shadow: 0 7px 5px rgba(38, 37, 37, 0.25);
+
+}
+
+.header_info{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header__title {
+    font-family: sans-serif;
+    font-size: 44px; 
+    margin-left: 2rem; 
+    color: #F5F5F5;
+}
+.buscar {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-left: auto;
+    margin-right: 200px;
+}
+
+/* Estilo del input */
+.buscar input {
+    width: 0px;
+    height: 40px;
+    padding: 0 20px;
+    font-size: 18px;
+    color: black;
+    outline: none;
+    border: 1px solid #F5F5F5;
+    border-radius: 5rem;
+    transition: all 0.6s ease;
+}
+
+/* Estilo del botón */
+.btn {    
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    background-color: #000000;
+    text-align: center;
+    color: whitesmoke;
+    font-size: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+}
+
+/* Efectos de hover y focus en el input */
+.buscar:hover input,
+.buscar input:focus {
+    width: 240px;
+}
+
+/*...........Productos.............*/
+
+.pagina_principal{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 15px 10px 0px; 
+    gap: 40px;
+    height: auto;
+}
+
+.subtitulo{
+    display: flex;
+    justify-content: center;
+}
+
+.seccion__productos {
+    flex: 0 1 70%;
+    
+}
+
+.formulario-container {
+    flex: 0 1 30%;
+}
+
+.lista-card{
+    display: flex;
+    margin-left: 100px;
+    justify-content: center;
+    max-height: 80vh;
+    overflow-y: auto;
+    width: 85%;
+    background-color: #b0c4de;
+    box-shadow: -8px 10px 5px  rgba(66, 61, 61, 0.25);
+    margin-bottom: 90px;
+    padding-bottom: 100px;
+}
+
+.delete_logo{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.datos-formulario {
+    width: calc(100% - 60px);
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0 5px 0;
+}
+.input_nombre{
+    border-radius: 50px;
+    padding: .8rem 2rem .8rem 1rem;
+    background-color: #F5F5F5;
+    border: none;
+    border-radius: 5rem;
+    font-size: 16px;
+    outline: auto;
+}
+.input_precio{
+    border-radius: 50px;
+    padding: .8rem 2rem .8rem 1rem;
+    background-color: #F5F5F5;
+    border: none;
+    border-radius: 5rem;
+    font-size: 16px;
+    outline: auto;
+}
+.input_imagen{
+    border-radius: 50px;
+    padding: .8rem 2rem .8rem 1rem;
+    background-color: #F5F5F5;
+    border: none;
+    border-radius: 5rem;
+    font-size: 16px;
+    outline:auto;
+}
+.botones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 40px;
+}
+.boton-enviar{
+    color:white;
+    border-color: #b0c4de;
+    background-color: #b0c4de;
+}
+.boton-enviar:hover{
+    color:#b0c4de;
+    background-color: white;
+    border-color: #b0c4de;
+}
+.boton-limpiar{
+    color:#b0c4de;
+    border-color: #b0c4de;
+    background-color: white;
+}
+.boton-limpiar:hover{
+    color:white;
+    background-color: #b0c4de;
+    border-color: #b0c4de;
+}
+.boton-enviar, .boton-limpiar{
+    width: 30%;
+    height: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    border:3px solid #b0c4de;
+    margin-right: 10px;
+}
