@@ -8,8 +8,9 @@
     <link rel="apple-touch-icon" href="imagenes/icono tienda.png" sizes="180x180">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">    <title>AluraGeek</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap" rel="stylesheet"><title>AluraGeek</title>
+    <script  src="./main.js" defer type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
     <!------------ ENCABEZADO ----------->
@@ -18,23 +19,18 @@
         <nav class="header_info">
             <a href="./index.html"><img class="header__logo" src="imagenes/icono tienda.png"></a>
             <h1 class="header__title">AluraGeek</h1>
-            <div class="buscar">
-                <input type="text" placeholder="Buscar" required>
-                <div class="btn">
-                    <i class="fas fa-search"></i>
-                </div>
         </nav>
     </header>
 
         <!------------ PRODUCTOS ----------->
 
     <div class="pagina_principal">
-        <section class="seccion__productos">
+        <div class="seccion_productos">
             <div class="subtitulo">
-                <h1> Mis productos</h1>
+                <h1>Mis productos:</h1>
             </div>
-            <div class="lista-card" data-cards-productos>
-                <div class="card">
+            <div id="lista-card" data-cards-productos>
+                <!--<div class="card">
                     <figure>
                     <img class="producto-img"  src="" alt="img"/>
                     <figcaption class="card-container--info"></figcaption>
@@ -45,30 +41,41 @@
                     <img class="delete_logo"  src="imagenes/eliminar.png" alt="eliminar"/>
                     </button>
                  </div>
-               </div>
+               </div>-->
             </div>
-        </section>
+        </div>
     
 
         <section class="formulario-container">
-            <form class="formulario-producto" data-formulario>
-                <h2 class="subtitulo-formulario">Agregar Producto</h2>
+            <form id="formulario-producto" data-formulario>
+                <h2 class="subtitulo-formulario">Agregar Producto:</h2>
                 <div class="datos-formulario">
-                    <input class="input_nombre" type="text" name="nombre" placeholder="Nombre" data-nombre-producto required>
+                    <input class="input_nombre" type="text" name="nombre" placeholder="Nombre" required>
                     <p class="parrafo-nombre"></p>
                 
-                    <input class="input_precio" type="number" name="precio" placeholder="Precio" data-precio-producto required>
+                    <input class="input_precio" type="text" name="precio" placeholder="Precio" required>
                     <p class="parrafo-precio"></p>
                
-                    <input class="input_imagen" type="url" name="url-imagen" placeholder="Imagen" data-imagen-producto required>
+                    <input class="input_imagen" type="url" name="imagen" placeholder="Imagen" required>
                     <p class="parrafo-url"></p>
                 </div>
                 <div class="botones">
-                    <button class="boton-enviar" type="submit"data-enviar>Añadir</button>
-                    <button class="boton-limpiar" type="button" data-limpiar>Limpiar</button>
+                    <button id="boton-enviar" type="submit"data-enviar>Añadir</button>
+                    <button id="boton-limpiar" type="button" data-limpiar>Limpiar</button>
                 </div>
             </form>
         </section>
+    </div>
+
+    <div class="col-12" id="footer-container">
+        <footer class="piedepagina">
+            <p>&copy; 2024 - Creado por Óscar Albarracín</p>
+            <ul>
+              <li><a href="https://github.com/ELXANNAX" target="_blank"><img src="imagenes/GitHub.png" width="20px"></a></li>
+              <li><a href="https://www.linkedin.com/in/oscar-jos%C3%A9-a280b41b1/" target="_blank"><img src="imagenes/Linkedin.png" width="20px"></a></li>
+              <li><a href="https://wa.me/3133617443" target="_blank"><img src="imagenes/whatsapp_logo_new-2x.png" width="20px"></a></li>
+            </ul>
+          </footer>
     </div>
 </body>
 </html>

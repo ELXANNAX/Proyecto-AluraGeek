@@ -1,24 +1,52 @@
 {
-    "productos":[
-        {
-            "id": 1,
-            "nombre": "nintendo switch",
-            "precio": "1,380,000",
-            "imagen": "https://http2.mlstatic.com/D_NQ_NP_989383-MLU70320451445_072023-O.webp"
-        },
-
-        {
-            "id": 2,
-            "nombre": "PS5",
-            "precio": "2,384,995",
-            "imagen": "https://gmedia.playstation.com/is/image/SIEPDC/ps5-product-thumbnail-01-en-14sep21?$facebook$"
-        },
-
-        {
-            "id": 3,
-            "nombre": "PS4",
-            "precio": "1,780,000",
-            "imagen": "https://gmedia.playstation.com/is/image/SIEPDC/ps4-product-thumbnail-01-en-14sep21?$facebook$"
-        }
-    ]
+  "productos": [
+    {
+      "id": "0d2e",
+      "nombre": "PS4",
+      "precio": "2.049.900",
+      "imagen": "https://www.muycomputer.com/wp-content/uploads/2017/01/PS4-Slim-white-1000x576.jpg"
+    },
+    {
+      "id": "e8ae",
+      "nombre": "PS3",
+      "precio": "850.000",
+      "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/PS3-Consoles-Set.jpg/640px-PS3-Consoles-Set.jpg"
+    },
+    {
+      "id": "be44",
+      "nombre": "PS5",
+      "precio": "2.400.000",
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgtzrgi8AOufPOhxlZe8y-PsIe2dk_xu2Gug&s"
+    },
+    {
+      "id": "40fd",
+      "nombre": "Computador Portátil Gamer LENOVO LOQ",
+      "precio": "3.299.000",
+      "imagen": "https://www.alkomprar.com/medias/197532285545-002-1400Wx1400H?context=bWFzdGVyfGltYWdlc3w5ODYwNnxpbWFnZS93ZWJwfGFEQm1MMmhsTlM4eE5ETTFPVFE1TXpFeE5Ua3pOQzh4T1RjMU16SXlPRFUxTkRWZk1EQXlYekUwTURCWGVERTBNREJJfDNjNmJhYzg1YTE5MTIzN2Y1OTg3MzNjZjE3ZmM2OTYyMTAzOGM3NjRhOTViY2M0Mzk0YjUyYWFlZDE0ZDEyYTg"
+    },
+    {
+      "id": "9a0d",
+      "nombre": "Consola LENOVO",
+      "precio": "3.399.000",
+      "imagen": "https://www.alkomprar.com/medias/197532715035-001-750Wx750H?context=bWFzdGVyfGltYWdlc3wxMDQ0NnxpbWFnZS93ZWJwfGFEY3pMMmd6TXk4eE5ETTJOREE1TnpVeE1UUTFOQzh4T1RjMU16STNNVFV3TXpWZk1EQXhYemMxTUZkNE56VXdTQXwyY2Y2YzkzMGNlZWE1OGNlZDg4MTI2YjgxYTViMzk2NjMxNDUyY2NlMWI4MzY2MGRhMGFiZTljNDFjMjkxYWJi"
+    },
+    {
+      "id": "5016",
+      "nombre": "Xbox Series X 1TB",
+      "precio": "3.049.900",
+      "imagen": "https://www.alkomprar.com/medias/889842640755-001-750Wx750H?context=bWFzdGVyfGltYWdlc3w2Njg2fGltYWdlL3dlYnB8YUdRMkwyaGpOaTh4TkRJNU5EWXpNVEV5TURreU5pODRPRGs0TkRJMk5EQTNOVFZmTURBeFh6YzFNRmQ0TnpVd1NBfGI4NzJlMzBmOTQxOTg1Y2VlMjVkYjNhZTI4NDBmZDdhNzgyOTYwMWU4OGYyM2VjYjc5OWM3NWQzNjcyN2NmOTI"
+    },
+    {
+      "id": "556e",
+      "nombre": "Consola ROG",
+      "precio": "2.999.000",
+      "imagen": "https://www.alkomprar.com/medias/4711387225073-001-750Wx750H?context=bWFzdGVyfGltYWdlc3wyMTI2MnxpbWFnZS93ZWJwfGFHRXdMMmhtTnk4eE5ETTFORFkxTkRBd016SXpNQzgwTnpFeE16ZzNNakkxTURjelh6QXdNVjgzTlRCWGVEYzFNRWd8YTE0YzY3MTAyOWQyZDQwNzQxNTcxNGVlMzZkZWU5ZjRhY2JjYjRjZmI4NmYzODkzNWEwNTRmNmVmNWU2MzNlOQ"
+    },
+    {
+      "id": "76fd",
+      "nombre": "NINTENDO SWITCH",
+      "precio": "1.719.000",
+      "imagen": "https://www.alkomprar.com/medias/045496882174-001-750Wx750H?context=bWFzdGVyfGltYWdlc3wxNDQ2MDR8aW1hZ2UvanBlZ3xhVzFoWjJWekwyZzVNQzlvT1Rjdk1UQTVPREU1TkRZMU1qTTJOemd1YW5Cbnw2NDA1OWViYjk0ZTc5YWFlZTliZDkyMWU4MjhmZjhkZTUzMGMxYmNhMjlmOGVhN2I0NjQyOThlMzNiY2YyYzIy"
+    }
+  ]
 }

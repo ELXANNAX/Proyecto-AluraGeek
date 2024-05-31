@@ -43,54 +43,11 @@ body, html {
     margin-left: 2rem; 
     color: #F5F5F5;
 }
-.buscar {
-    padding: 5px;
-    display: flex;
-    align-items: center;
-    position: relative;
-    margin-left: auto;
-    margin-right: 200px;
-}
-
-/* Estilo del input */
-.buscar input {
-    width: 0px;
-    height: 40px;
-    padding: 0 20px;
-    font-size: 18px;
-    color: black;
-    outline: none;
-    border: 1px solid #F5F5F5;
-    border-radius: 5rem;
-    transition: all 0.6s ease;
-}
-
-/* Estilo del botón */
-.btn {    
-    width: 55px;
-    height: 55px;
-    line-height: 55px;
-    background-color: #000000;
-    text-align: center;
-    color: whitesmoke;
-    font-size: 20px;
-    border-radius: 50%;
-    cursor: pointer;
-    position: absolute;
-    right: 0;
-}
-
-/* Efectos de hover y focus en el input */
-.buscar:hover input,
-.buscar input:focus {
-    width: 240px;
-}
 
 /*...........Productos.............*/
 
 .pagina_principal{
     display: flex;
-    justify-content: space-between;
     margin: 30px 15px 10px 0px; 
     gap: 40px;
     height: auto;
@@ -101,38 +58,79 @@ body, html {
     justify-content: center;
 }
 
-.seccion__productos {
-    flex: 0 1 70%;
+
+#lista-card{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    overflow-y: auto;
+    height: 400px;
+    background-color: #b0c4de;
+    box-shadow: -8px 10px 5px  rgba(66, 61, 61, 0.25);
+    margin-left: 20px;
+    width: 900px;
+}
+
+.formulario-container{
+    text-align: center;
+    width:40%;
+    padding-top: 15px;
+    margin-left: 20px;
     
 }
 
-.formulario-container {
-    flex: 0 1 30%;
-}
-
-.lista-card{
+.card{
     display: flex;
-    margin-left: 100px;
+    max-width: 220px;
     justify-content: center;
-    max-height: 80vh;
-    overflow-y: auto;
-    width: 85%;
-    background-color: #b0c4de;
-    box-shadow: -8px 10px 5px  rgba(66, 61, 61, 0.25);
-    margin-bottom: 90px;
-    padding-bottom: 100px;
+    flex-direction: column;
+}
+.producto-img{
+    width: 230px;
+    height: 230px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 4%;
+    border: 3px solid #151414;
+    transition: transform 0.3s ease-in-out;
 }
 
+.seccion_productos{
+    width: 100%;
+    
+}
+
+.producto-img:hover{
+    transform: scale(1.1);
+}
+.card-container--info{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    font-weight:bold;
+    font-size: 20px;
+}
+.card-container--value{
+    font-size: 18px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.delete-button{
+    cursor: pointer;
+}
 .delete_logo{
     width: 20px;
     height: 20px;
     cursor: pointer;
+    pointer-events: none;
 }
 .datos-formulario {
-    width: calc(100% - 60px);
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
-    margin: 30px 0 5px 0;
+    margin: 30px 30px 5px 0;
 }
 .input_nombre{
     border-radius: 50px;
@@ -167,27 +165,27 @@ body, html {
     align-items: center;
     margin-right: 40px;
 }
-.boton-enviar{
+#boton-enviar{
     color:white;
     border-color: #b0c4de;
     background-color: #b0c4de;
 }
-.boton-enviar:hover{
+#boton-enviar:hover{
     color:#b0c4de;
     background-color: white;
     border-color: #b0c4de;
 }
-.boton-limpiar{
+#boton-limpiar{
     color:#b0c4de;
     border-color: #b0c4de;
     background-color: white;
 }
-.boton-limpiar:hover{
+#boton-limpiar:hover{
     color:white;
     background-color: #b0c4de;
     border-color: #b0c4de;
 }
-.boton-enviar, .boton-limpiar{
+#boton-enviar, #boton-limpiar{
     width: 30%;
     height: 40px;
     font-size: 16px;
@@ -197,3 +195,111 @@ body, html {
     border:3px solid #b0c4de;
     margin-right: 10px;
 }
+
+/*-------Estilos para el pie de página*/
+.piedepagina{
+    background-color: #b0c4de;
+    padding: 2px;
+    text-align: center;
+    margin-top: 60px;
+  }
+   
+  .piedepagina ul {
+    list-style: none;
+    padding: 0;
+    margin: 0%;
+  }
+   
+  .piedepagina ul li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+   
+  .piedepagina ul li a img {
+    border: none;
+    margin-top: 10px;
+  }
+  @media (max-width: 768px) {
+
+    .header__logo{
+        margin-left: 30px;
+        width: 70px;
+        height: 70px;
+    }
+
+    .pagina_principal{
+        display: flex;
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+    .header{
+        gap: 6px;
+    }
+    .header__title{
+      font-size: 35px;
+    }
+
+    .subtitulo{
+        padding: 10px 0 30px 0;
+    }  
+   
+    #lista-card{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        background-color: #b0c4de;
+        margin-left: 28px;
+        width: 90%;
+    }
+    
+    .formulario-container{
+        width: 100%;
+        padding-top: 15px;
+        margin-left: 20px;
+        
+    }
+    #formulario-producto{
+        padding: 10px;
+    }
+    .subtitulo-formulario{
+        padding: 0 50px 10px 0;
+        
+    }
+    .input{
+        font-size: 18px;
+        height: 55px;
+    }
+    .botones{
+        display: flex;
+        justify-content: center;
+        margin-left: 30px;
+    }
+    .boton-enviar, .boton-limpiar{
+        height: 60px;
+    }
+    .boton-enviar, .boton-limpiar{
+        width: 50%;
+    }
+    .pie-de-pagina{
+        justify-content: center;
+        align-items: center;
+        font-size: 11px;
+        width: 100%;
+        gap: 7px;
+        height: auto;
+    }
+    .pie-de-pagina p{
+        padding-left: 15px;
+    }
+}
+
+/* Estilos para Scroll*/
+
+*::-webkit-scrollbar{
+    width: 7px;
+  }
+  
+  *::-webkit-scrollbar-thumb{
+    background: #151414;
+    border-radius: 10px;
+  } 
